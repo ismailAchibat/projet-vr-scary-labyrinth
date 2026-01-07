@@ -3172,7 +3172,7 @@ PrefabInstance:
     - target: {fileID: -3850512320142124339, guid: 3cce0b3aa0bff1c49ad7a8d522120356, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b87e0daee139f6043857e91c47c6beab, type: 2}
+      objectReference: {fileID: 2100000, guid: f190792d863551f4d98a8b3ff0c13abb, type: 2}
     - target: {fileID: 919132149155446097, guid: 3cce0b3aa0bff1c49ad7a8d522120356, type: 3}
       propertyPath: m_Name
       value: labyrinth
@@ -3180,7 +3180,7 @@ PrefabInstance:
     - target: {fileID: 6848444879212861108, guid: 3cce0b3aa0bff1c49ad7a8d522120356, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b865feae9f3ca734f89ca954ba3c4d5f, type: 2}
+      objectReference: {fileID: 2100000, guid: 18f6eec3e0591fe46870f60358b05397, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6769,7 +6769,7 @@ Transform:
   m_GameObject: {fileID: 1748601786}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.09, y: 0, z: -6.46}
+  m_LocalPosition: {x: -0.78, y: 0, z: 8.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
