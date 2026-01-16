@@ -51,7 +51,6 @@ public class CoffreSurprise : MonoBehaviour
         }
         else
         {
-            // --- C'EST ICI QUE CA CHANGE ---
 
             // On ajoute +1 au compteur de clés du manager
             manager.clesTrouvees += 1;

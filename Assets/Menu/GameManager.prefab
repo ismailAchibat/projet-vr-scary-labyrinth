@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8016611166863233032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4057261698671409978}
+  - component: {fileID: 3204972118727843070}
+  - component: {fileID: 115301288048511051}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4057261698671409978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016611166863233032}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3204972118727843070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016611166863233032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc6e9e5b549a134789032795f972fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clesTrouvees: 0
+  portesOuvertes: 0
+  tempsRestant: 180
+  texteDuChrono: {fileID: 0}
+  ecranGameOver: {fileID: 0}
+  cameraJoueur: {fileID: 0}
+  aLaCle: 0
+--- !u!114 &115301288048511051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016611166863233032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e221ef6d2f3a212429d836f1c7407f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boutonMenu:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Bouton Menu
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 6b3c2f06-9981-4f23-8862-219a13a36d6d
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 4116954447336496447, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
+  menuPauseUI: {fileID: 0}
+  texteTimer: {fileID: 0}
+  textePourcentage: {fileID: 0}
+  textePortes: {fileID: 0}
+  texteCles: {fileID: 0}
+  cameraJoueur: {fileID: 0}
