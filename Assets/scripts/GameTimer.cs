@@ -1,8 +1,12 @@
 using UnityEngine;
 using TMPro; // Nécessaire pour le texte
 
+
 public class GameTimer : MonoBehaviour
 {
+    [Header("Progression")]
+    public int clesTrouvees = 0;
+    public int portesOuvertes = 0;
     public float tempsRestant = 180f; // 180 secondes = 3 minutes
     private bool chronometreActif = false;
 
