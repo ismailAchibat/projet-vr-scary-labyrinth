@@ -3,7 +3,10 @@ guid: 5dc6e9e5b549a134789032795f972fac
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - texteDuChrono: {instanceID: 0}
+  - ecranGameOver: {fileID: 471084981387546527, guid: 48267cce89749924b8c79569f03a8651, type: 3}
+  - cameraJoueur: {fileID: 1792133661633768261, guid: 39cbc49081784da4e89ea69da97b7060, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
