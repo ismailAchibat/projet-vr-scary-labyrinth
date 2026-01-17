@@ -3,7 +3,13 @@ guid: e221ef6d2f3a212429d836f1c7407f1b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - menuPauseUI: {fileID: 8311803687336405713, guid: 82b4b5fddc264d14bb5b67edca34ac3b, type: 3}
+  - texteTimer: {fileID: 1010370132322975461, guid: 3c267b146fb5ade459f9c7c8563abee6, type: 3}
+  - textePourcentage: {fileID: 8310845255743322052, guid: 66d87d6456145464ea9bebeaa010535c, type: 3}
+  - textePortes: {fileID: 2074662028607057343, guid: 6133742be7f560f40a9944b513519889, type: 3}
+  - texteCles: {fileID: 5084917228673490686, guid: 1e34284188bc8524697edec8157d16f4, type: 3}
+  - cameraJoueur: {fileID: 1792133661633768261, guid: 39cbc49081784da4e89ea69da97b7060, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
