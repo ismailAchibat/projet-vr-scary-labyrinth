@@ -17,20 +17,20 @@ public class CoffreInteraction : MonoBehaviour
         if (estDejaOuvert) return;
         estDejaOuvert = true;
 
-        // 1. Déclenche l'animation
+
+        // 1. Cache le bouton pour qu'on ne puisse plus cliquer
+        if (boutonAEnlever != null)
+        {
+            boutonAEnlever.SetActive(false);
+        }
+        // 2. Déclenche l'animation
         if (anim != null)
         {
             anim.SetTrigger(triggerOuverture);
         }
 
-        // 2. Cache le bouton pour qu'on ne puisse plus cliquer
-        if (boutonAEnlever != null)
-        {
-            boutonAEnlever.SetActive(false);
-        }
-
-        // 3. Calcul de la surprise
-        DeterminerSurprise();
+        // 3. Calcul de la surprise (avec délai pour l'animation)
+        Invoke(nameof(DeterminerSurprise), 2.5f);
     }
 
     private void DeterminerSurprise()
