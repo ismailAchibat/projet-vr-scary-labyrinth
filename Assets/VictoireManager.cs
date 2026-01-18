@@ -4,11 +4,11 @@ using TMPro;
 public class VictoireManager : MonoBehaviour
 {
     [Header("UI de Victoire")]
-    public GameObject canvasGameWon; // Glisse ton "Canvas_GameWon" ici
-    public TMP_Text texteMessage;    // Optionnel : si tu veux changer le texte par code
+    public GameObject canvasGameWon;
+    public TMP_Text texteMessage;
 
     [Header("Références")]
-    public Transform cameraJoueur;   // Glisse la Main Camera de ton XR Origin
+    public Transform cameraJoueur; 
 
     private bool aGagne = false;
 

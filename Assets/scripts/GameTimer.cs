@@ -1,5 +1,5 @@
 using UnityEngine;
-using TMPro; // Nécessaire pour le texte
+using TMPro; 
 
 
 public class GameTimer : MonoBehaviour
@@ -11,14 +11,14 @@ public class GameTimer : MonoBehaviour
     private bool chronometreActif = false;
 
     [Header("Glisser les objets ici")]
-    public TextMeshProUGUI texteDuChrono; // Le texte qui défile
-    public GameObject ecranGameOver;      // L'écran de fin
-    public Transform cameraJoueur;        // La caméra VR
+    public TextMeshProUGUI texteDuChrono; // Le texte qui dï¿½file
+    public GameObject ecranGameOver;      // L'ï¿½cran de fin
+    public Transform cameraJoueur;        // La camï¿½ra VR
 
     void Start()
     {
         chronometreActif = true;
-        // On s'assure que l'écran Game Over est caché au début
+        // On s'assure que l'ï¿½cran Game Over est cachï¿½ au dï¿½but
         if (ecranGameOver != null) ecranGameOver.SetActive(false);
     }
 
@@ -53,33 +53,33 @@ public class GameTimer : MonoBehaviour
     {
         Debug.Log("PERDU !");
 
-        // 1. Positionner l'écran Game Over devant les yeux du joueur
+        // 1. Positionner l'ï¿½cran Game Over devant les yeux du joueur
         if (ecranGameOver != null && cameraJoueur != null)
         {
             ecranGameOver.SetActive(true);
-            // On le place 2 mètres devant la caméra
+            // On le place 2 mï¿½tres devant la camï¿½ra
             ecranGameOver.transform.position = cameraJoueur.position + cameraJoueur.forward * 2.0f;
             // On le tourne vers le joueur
             ecranGameOver.transform.LookAt(cameraJoueur);
-            // Correction de la rotation (sinon le texte est à l'envers)
+            // Correction de la rotation (sinon le texte est ï¿½ l'envers)
             ecranGameOver.transform.Rotate(0, 180, 0);
         }
 
-        // 2. Arrêter le jeu (pause)
+        // 2. Arrï¿½ter le jeu (pause)
         Time.timeScale = 0;
     }
 
-    // Fonction à appeler quand le joueur trouve la sortie
+    // Fonction ï¿½ appeler quand le joueur trouve la sortie
     public void Victoire()
     {
         chronometreActif = false;
-        Debug.Log("GAGNÉ ! Le temps s'arrête.");
+        Debug.Log("GAGNï¿½ ! Le temps s'arrï¿½te.");
     }
 
     // Gestion du coffre
 
     [Header("Inventaire")]
-    public bool aLaCle = false; // Pour savoir si le joueur a la clé
+    public bool aLaCle = false; // Pour savoir si le joueur a la clï¿½
 
     // Fonction pour modifier le temps (Bonus ou Malus)
     public void ModifierTemps(float secondes)
@@ -91,7 +91,7 @@ public class GameTimer : MonoBehaviour
         else Debug.Log("PENALITE ! " + secondes + " secondes");
     }
 
-    // Fonction pour ramasser la clé
+    // Fonction pour ramasser la clï¿½
     public void RamasserCle()
     {
         aLaCle = true;
